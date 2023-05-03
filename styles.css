@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Khand', sans-serif;
+    box-sizing: border-box;
 }
 body {
     background-image: url(./fondo/coffee111.jpg);
@@ -546,25 +547,34 @@ span {
      7px 7px 20px 0px #0003,
      4px 4px 5px 0px #0002;
     transition:400ms ease all;
-  }
-  .cv:after{
+}
+.cv:after{
     right:inherit;
     top:inherit;
     left:0;
     bottom:0;
-  }
-  .cv:hover:before,
-  .cv:hover:after{
+}
+.cv:hover:before,
+.cv:hover:after{
     width:100%;
     transition:800ms ease all;
-  }
+}
 .contenido2 {
     display:none;
 }
 .titulo-cont {
     display: none;
 } 
-@media only screen and (min-width:350px) and (max-width:720px) {
+.perfil-mobile {
+    display: none;
+}
+.titulo-cont-mobile {
+    display: none;
+}
+.contenido2-mobile {
+    display: none;
+}
+@media only screen and (min-width:350px) and (max-width:800px) {
     body {
         background-image: url(./fondo/coffee111.jpg);
         background-size: 100% 100%;
@@ -587,7 +597,7 @@ span {
         font-size: 22px;
     }
     .card {
-        left:-90%;
+        display: none;
     }
     .inicio h1 {
         margin-left: -0px;
@@ -602,23 +612,32 @@ span {
         text-align: center;
         margin-top: 90px;
     }
-    .contenido2 {
-        display:flex;
-        margin-left: -100px;
-        margin-top: -15px;
+    .body {
+        display: grid;
+        place-items: center;
     }
-    .titulo-cont {
-        text-align: center;
+    .perfil-mobile {
         display: flex;
         justify-content: center;
+    }
+    .mobile {
+        width: 299px;
+        border: 3px solid #3f37c9;
+        border-radius: 50%;
+    }
+    .contenido2-mobile{
+        display: flex;
+        justify-content: space-around;
+    }
+    .contenido2-mobile p {
+        margin-left: -60px;
+    }
+    .titulo-cont-mobile{
+        display: inline-block;
+        text-align: center;
+        display: grid;
+        place-items: center;
         margin-top: 30px;
         color: #fff;
     }
-    .navbar {
-        display:flex
-    }
-    .nav-link {
-        color: #fff;
-        display: flex;
-    }
-}
+}    
