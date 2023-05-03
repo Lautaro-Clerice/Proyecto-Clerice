@@ -563,20 +563,15 @@ span {
 }
 .titulo-cont {
     display: none;
-}
-
+} 
 @media only screen and (min-width:350px) and (max-width:720px) {
     body {
         background-image: url(./fondo/coffee111.jpg);
-        background-size: 148% 100%;
+        background-size: 100% 100%;
         background-position: center;
         background-repeat: no-repeat;
         background-color:rgb(49, 47, 47);
         background-blend-mode: soft-light;
-        height: 190vh;
-    }
-    ul {
-        width: 148%;
     }
     ul li {
         display:none;
@@ -591,7 +586,9 @@ span {
     .logo a {
         font-size: 22px;
     }
-    
+    .card {
+        left:-90%;
+    }
     .inicio h1 {
         margin-left: -0px;
         margin-top:500px;
@@ -616,9 +613,6 @@ span {
         justify-content: center;
         margin-top: 30px;
         color: #fff;
-    }
-    .card {
-        margin-left: -74%;
     }
     .navbar {
         display:flex
