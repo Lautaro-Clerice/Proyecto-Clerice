@@ -574,6 +574,13 @@ span {
 .contenido2-mobile {
     display: none;
 }
+.ft-contacto {
+    display:flex;
+    justify-content: center;
+}
+.ft-contacto address {
+    text-align: center;
+}
 @media only screen and (min-width:350px) and (max-width:800px) {
     body {
         background-image: url(./fondo/coffee111.jpg);
@@ -599,6 +606,7 @@ span {
     .card {
         display: none;
     }
+    
     .inicio h1 {
         margin-left: -0px;
         margin-top:500px;
@@ -640,4 +648,85 @@ span {
         margin-top: 30px;
         color: #fff;
     }
-}    
+    #nombre {
+        width:300px;
+    } 
+    #mail {
+        width:300px;
+    }
+    #telefono {
+        width:300px;
+    }
+    #mensaje {
+        width:300px;
+    }
+    .ft-contacto {
+        display:flex;
+        justify-content: center;
+    }
+    .ft-contacto address {
+        text-align: center;
+    }
+}   
+@media only screen and (min-width:801px) and (max-width:1200px) {
+    .mobile {
+        width: 299px;
+        border: 3px solid #3f37c9;
+        border-radius: 50%;
+        margin-left: 100px;
+    }
+    .body {
+        display: grid;
+        place-items: center;
+    }
+    .perfil-mobile {
+        display: flex;
+        justify-content: start;
+    }
+    .card {
+        display: none;
+    }
+    .banner h1 {
+        width: 400px;
+        margin-left: 50%;
+    }
+    .banner p {
+        width: 400px;
+        margin-left: 50%;
+        text-align: center;
+    }
+    .contenido2-mobile{
+        display: flex;
+        justify-content: space-around;
+    }
+    .contenido2-mobile p {
+        margin-left: -60px;
+    }
+    .titulo-cont-mobile{
+        display: inline-block;
+        text-align: center;
+        display: grid;
+        place-items: center;
+        margin-top: 30px;
+        color: #fff;
+    }
+    ul {
+        display:flex;
+        justify-content: center;
+    }
+    ul li {
+        font-size: 18px;
+        margin-left: 2px;
+    } 
+    .about {
+        margin-left: 30px;
+       
+    }
+    .ft-contacto {
+        display:flex;
+        justify-content: center;
+    }
+    .ft-contacto address {
+        text-align: center;
+    }
+} 
