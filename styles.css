@@ -51,7 +51,7 @@ a:hover {
     margin-bottom: -10px;
     color: #3f37c9;
 }
-ul {
+.nav-desk {
     display:flex;
     background-color:#00000093;
     list-style: none;
@@ -581,6 +581,9 @@ span {
 .ft-contacto address {
     text-align: center;
 }
+.navbar {
+    display: none;
+}
 @media only screen and (min-width:350px) and (max-width:800px) {
     body {
         background-image: url(./fondo/coffee111.jpg);
@@ -590,11 +593,11 @@ span {
         background-color:rgb(49, 47, 47);
         background-blend-mode: soft-light;
     }
-    ul li {
-        display:none;
-    }
     .about {
-        margin-left: 0px;
+        display: none;
+    }
+    .nav-desk {
+        display: none;
     }
     .logo {
         width: 600px;
@@ -666,6 +669,9 @@ span {
     }
     .ft-contacto address {
         text-align: center;
+    }
+    .navbar {
+        display: flex;
     }
 }   
 @media only screen and (min-width:801px) and (max-width:1200px) {
