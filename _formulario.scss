@@ -1,0 +1,82 @@
+//mixins
+@mixin formulario{
+    width: 500px;
+    height: 30px;
+    border-color: $color-prin;
+    border-radius: 10px;
+    margin: 9px;
+}
+form {
+    text-align: center;
+}
+
+#nombre {
+    @include formulario;
+}
+
+#nombre::placeholder {
+    text-align: center;
+    font-size: 15px;
+}
+
+#nombre:hover {
+    box-shadow: 0px 0px 7px $color-prin;
+}
+
+#mail {
+    @include formulario;;
+}
+
+#mail::placeholder {
+    text-align: center;
+    font-size: 15px;
+}
+
+#mail:hover {
+    box-shadow: 0px 0px 7px $color-prin;
+}
+
+#telefono {
+    @include formulario;
+}
+
+#telefono::placeholder {
+    text-align: center;
+    font-size: 15px;
+}
+
+#telefono:hover {
+    box-shadow: 0px 0px 7px $color-prin;
+}
+
+textarea {
+    width: 500px;
+    height: 60px;
+    border-color: $color-prin;
+    border-radius: 10px;
+    margin: 9px;
+    text-align: center;
+    font-size: 15px;
+}
+
+textarea:hover {
+    box-shadow: 0px 0px 7px $color-prin;
+}
+
+button {
+    width: 130px;
+    height: 35px;
+    border-color: $color-prin;
+    box-shadow: 0px 0px 7px $color-prin;
+    color: $color-prin;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 80%);
+    transition: 0.5s;
+    scale: 1.2;
+}
+
+.contactame {
+    margin-top: 120px;
+}
