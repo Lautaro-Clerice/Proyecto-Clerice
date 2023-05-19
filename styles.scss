@@ -5,7 +5,11 @@ $color-letra: #fff;
 @import "_formulario";
 @import "_card";
 @import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500&display=swap');
-
+@mixin letras ($color, $pad, $txt){
+    color: $color;
+    padding:$pad;
+    text-align: $txt;
+}
 * {
     margin: 0;
     padding: 0;
@@ -574,6 +578,78 @@ span {
 .navbar {
     display: none;
 }
+.info {
+    height:500px;
+    background-color: rgba(0, 0, 0, 0.436);
+    margin-top:200px;
+    width: 95%;
+    margin-left:2.5%;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.738);
+    display:flex;
+}
+.icono-index {
+    height: 400px;
+    margin-top: 50px;
+    width:45% ;
+    margin-left: 2.5%;
+    border: 3px solid white;
+}
+.parrafo {
+    @extend .icono-index;
+    margin-left: 5%;
+}
+.parrafo p {
+    @include letras (#ffffff , 20px , center);
+}
+.parrafo h2 {
+    @include letras (#ffffff , 20px , center);
+}
+.container {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container i {
+    position: absolute;
+    inset: 0;
+    border: 2px solid white;
+    transition: .5s;
+}
+.container i:nth-child(1){
+    border-radius: 52% 48% 34% 66% / 57% 63% 37% 43% ;
+    animation: circulo 6s reverse infinite;
+}
+.container i:nth-child(2){
+    border-radius: 33% 67% 74% 26% / 57% 41% 59% 43% ;
+    animation: circulo 4s linear infinite;
+}
+.container i:nth-child(3){
+    border-radius: 77% 23% 74% 26% / 44% 55% 45% 56%  ;
+    animation: circulo2 5s linear infinite;
+}
+@keyframes circulo {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes circulo2 {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.container:hover i {
+    border: 6px solid var(--clr);
+    filter: drop-shadow(0 0 20px var(--clr) );
+}
 
 @media only screen and (min-width:350px) and (max-width:800px) {
     body {
@@ -803,6 +879,7 @@ span {
     .whatsapp {
         display:none;
     }
+
 
 }
 
